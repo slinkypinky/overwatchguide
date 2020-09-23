@@ -1,30 +1,105 @@
+header {
+  margin: 0;
+  padding: 18px;
+  background-color: rgb(19, 24, 36);
+  outline: 5px solid black;
+}
+
+.title {
+  position: relative;
+  color: #d4c9c9;
+  text-align: center;
+  font-family: "Overpass", sans-serif;
+  font-weight: 900;
+
+  left: -100%;
+
+  animation: slideIn 0.5s 0.3s forwards;
+}
+
+.title span {
+  font-weight: 300;
+}
+
 body {
+  box-sizing: border-box;
   margin: 0;
   padding 0;
   background-color: rgb(36, 45, 68);
   font-family: "Overpass", sans-serif;
 }
 
-header {
-  margin: 0;
-  padding: 18px;
-  text-align: center;
-  color: whitesmoke;
-  background-color: rgb(19, 24, 36);
-  outline: 5px solid black;
+
+.menu{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 40px;
 }
 
-nav {
-  
-  margin-top: 32px;
+.menuhero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid  rgb(83, 102, 153);
+}
+
+.menuteam{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid  rgb(20, 43, 105);
+}
+
+.icon{
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding-top: 40%;
 }
 
-nav a {
-  background-color: lightblue;
-  color: white;
-  padding: 8px;
+
+/* .menu {
+  color: #171717;
+  font-family: "Overpass", sans-serif;
+  font-size: 32px;
+  width: 200px;
+  height: auto;
   margin: 32px;
-  border: 16px black solid;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menuhero {
+  border: 2px solid lightblue;
+  width: 200%;
+  height: auto;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  margin: 40px;
+}
+
+.menuteam {
+  border: 2px solid lightblue;
+  width: 200%;
+  height: auto;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  margin: 40px;
+} 
+ */
+@keyframes slideIn {
+  from {
+  left: -100%;
+  }
+  to {
+  left: 0%;
+  }
 }
