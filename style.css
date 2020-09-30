@@ -5,6 +5,32 @@ header {
   outline: 5px solid black;
 }
 
+footer {
+  background-color: white;
+  padding: 5px;
+}
+
+a {
+  color: inherit;
+}
+
+.bot {
+  display: flex;
+  justify-content: center;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+}
+
+.branch {
+  color: whitesmoke;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .title {
   position: relative;
   color: #d4c9c9;
@@ -24,82 +50,92 @@ header {
 body {
   box-sizing: border-box;
   margin: 0;
-  padding 0;
+  padding: 0;
   background-color: rgb(36, 45, 68);
   font-family: "Overpass", sans-serif;
 }
 
-
-.menu{
+.menu {
   display: flex;
   justify-content: space-evenly;
   font-size: 40px;
-}
-
-.menuhero{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  padding: 10px;
-  border: 2px solid  rgb(83, 102, 153);
-}
-
-.menuteam{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  padding: 10px;
-  border: 2px solid  rgb(20, 43, 105);
-}
-
-.icon{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 40%;
-}
-
-
-/* .menu {
   color: #171717;
-  font-family: "Overpass", sans-serif;
-  font-size: 32px;
-  width: 200px;
-  height: auto;
-  margin: 32px;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
+
+  opacity: 0;
+
+  animation: fadeIn 0.5s linear 0.5s forwards;
 }
 
 .menuhero {
-  border: 2px solid lightblue;
-  width: 200%;
-  height: auto;
-  text-decoration: none;
-  color: white;
-  padding: 15px;
-  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid rgb(24, 24, 24);
+
+  background-image: linear-gradient(
+    to right,
+    rgb(24, 24, 24),
+    50%,
+    transparent 50%
+  );
+  background-position: 100% 0%;
+  background-size: 200% 100%;
+  transition: 0.5s;
 }
 
 .menuteam {
-  border: 2px solid lightblue;
-  width: 200%;
-  height: auto;
-  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid rgb(24, 24, 24);
+
+  background-image: linear-gradient(
+    to right,
+    rgb(24, 24, 24),
+    50%,
+    transparent 50%
+  );
+  background-position: 100% 0%;
+  background-size: 200% 100%;
+  transition: 0.5s;
+}
+
+.menuteam:hover,
+.menuhero:hover {
   color: white;
-  padding: 20px;
-  margin: 40px;
-} 
- */
+  background-position: 0% 50%;
+  box-shadow: 3px 3px 6px black;
+}
+
+.icon {
+  padding-top: 40%;
+}
+
+#intro {
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  font-family: "Overpass", sans-serif;
+}
+
 @keyframes slideIn {
-  from {
-  left: -100%;
+  0% {
+    left: -100%;
   }
-  to {
-  left: 0%;
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
