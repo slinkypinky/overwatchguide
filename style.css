@@ -5,9 +5,11 @@ header {
   outline: 5px solid black;
 }
 
-footer {
-  background-color: white;
+.extrafooter {
+  color: whitesmoke;
+  background-color: rgb(19, 24, 36);
   padding: 5px;
+  outline: 5px solid black;
 }
 
 a {
@@ -31,6 +33,14 @@ a {
   justify-content: space-between;
 }
 
+.dps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
 .title {
   position: relative;
   color: #d4c9c9;
@@ -41,6 +51,12 @@ a {
   left: -100%;
 
   animation: slideIn 0.5s 0.3s forwards;
+}
+
+.heropic {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .title span {
@@ -112,14 +128,29 @@ body {
 }
 
 .icon {
-  padding-top: 40%;
+  padding-top: 30%;
 }
 
-#intro {
+.intro {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   color: whitesmoke;
   font-family: "Overpass", sans-serif;
+}
+
+.paragraph {
+  justify-content: center;
+  align-items: space-between;
+  border: 2px solid black;
+}
+
+.tank {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
 }
 
 @keyframes slideIn {
